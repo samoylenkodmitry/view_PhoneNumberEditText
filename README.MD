@@ -41,3 +41,4 @@ Use `maxDigitsCount` field to set limit of phone number length.
         String formattedPhoneNumber = phoneEditText.getFormattedPhoneNumber();
 
 ```
+[Download test apk](app/app-release.apk)
