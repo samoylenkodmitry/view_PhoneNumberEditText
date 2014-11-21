@@ -10,11 +10,12 @@
 
     <samart.phonetextedittest.PhoneEditText
        xmlns:customNS="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/phoneEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@android:drawable/ic_menu_call"
         android:freezesText="true"
         android:hint="+7 (xxx) xxx-xx-xx"
-        customNS:fixedPhonePart="8"
+        customNS:fixedPhonePart="+7"
         />
 </RelativeLayout>
