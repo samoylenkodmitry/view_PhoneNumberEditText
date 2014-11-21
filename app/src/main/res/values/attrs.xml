@@ -2,5 +2,6 @@
 <resources>
 <declare-styleable name="PhoneEditText">
     <attr name="fixedPhonePart" format="string"/>
+    <attr name="maxDigitsCount" format="integer"/>
 </declare-styleable>
 </resources>

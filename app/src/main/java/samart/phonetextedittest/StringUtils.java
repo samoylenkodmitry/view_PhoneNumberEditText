@@ -20,10 +20,23 @@ package samart.phonetextedittest;
  */
 public class StringUtils {
 
+    /**
+     * Removes all non-digit letters from string
+     *
+     * @param str input string
+     * @return digits-only string
+     */
     public static String getDigits(String str) {
         return str.replaceAll("([^\\d])+", "");
     }
 
+    /**
+     * Formats digit-only string of phone number without regional code, such as 9067285686 to
+     * phone number representation string, such as (906) 728-56-86
+     *
+     * @param digitString input digit-only string
+     * @return formatted phone number string
+     */
     public static String formatPhoneNumber(String digitString) {
         int len = digitString.length();
         if (len > 10) return digitString;
@@ -46,7 +59,7 @@ public class StringUtils {
             stringBuilder.append(digitString.substring(6, 8)).append('-');
             last = 8;
         }
-        // "9053609402".. -> "(905) 360-94-02"
+        // "9053609409".. -> "(905) 360-94-09"
         stringBuilder.append(digitString.substring(last, len));
         return stringBuilder.toString();
     }
